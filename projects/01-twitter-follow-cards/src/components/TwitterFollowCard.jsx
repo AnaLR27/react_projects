@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function TwitterFollowCard({ userName = "Unknown", name, initialIsFollowing }) {
+export function TwitterFollowCard({ userName = "Unknown", name, initialIsFollowing ,avatar}) {
   //hook
   const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
   //handlers
@@ -12,12 +12,13 @@ export function TwitterFollowCard({ userName = "Unknown", name, initialIsFollowi
   const buttonClassName = isFollowing
     ? "tw-followCard-button is-following"
     : "tw-followCard-button ";
+    
   return (
     <article className="tw-followCard">
       <header className="tw-followCard-header">
         <img
           className="tw-followCard-avatar"
-          src={`https://unavatar.io/${userName}`}
+          src={`https://unavatar.io/${avatar}`}
           alt="Midudev"
         />
         <div className="tw-followCard-info">

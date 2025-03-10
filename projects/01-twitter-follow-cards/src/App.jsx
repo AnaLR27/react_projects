@@ -1,41 +1,16 @@
 import "./App.css";
-import { TwitterFollowCard } from "./TwitterFollowCard";
-
-const users = [
-  {
-    userName: "midudev",
-    name: "Miguel Ángel Durán",
-    isFollowing: true,
-  },
-  {
-    userName: "pheralb",
-    name: "Pablo H.",
-    isFollowing: false,
-  },
-  {
-    userName: "PacoHdezs",
-    name: "Paco Hdez",
-    isFollowing: true,
-  },
-  {
-    userName: "TMChein",
-    name: "Tomas",
-    isFollowing: false,
-  },
-];
+import { TwitterFollowCard } from "./components/TwitterFollowCard";
+import users from "./users.json"; // Importa el archivo JSON
 
 export function App() {
-  /*const format = (userName) => {
-    `@${userName}`;
-  };
-*/
   return (
     <section className="App">
-      {users.map(({ userName, name, isFollowing }) => (
+      {users.map(({ userName, name, isFollowing, avatar }) => (
         <TwitterFollowCard
           key={userName}
           userName={userName}
           name={name}
+          avatar={avatar}
           initialIsFollowing={isFollowing}
         />
       ))}

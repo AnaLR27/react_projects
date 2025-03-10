@@ -1,0 +1,26 @@
+[
+  {
+    "userName": "midudev",
+    "avatar": "midudev",
+    "name": "Miguel Ángel Durán",
+    "isFollowing": true
+  },
+  {
+    "userName": "ibai",
+    "avatar": "twitch/ibai",
+    "name": "Ibai Llanos",
+    "isFollowing": true
+  },
+  {
+    "userName": "AuronPlay",
+    "avatar": "twitch/auronplay",
+    "name": "Raúl Álvarez",
+    "isFollowing": false
+  },
+  {
+    "userName": "TheGrefg",
+    "avatar": "twitch/thegrefg",
+    "name": "David Cánovas",
+    "isFollowing": false
+  }
+]
